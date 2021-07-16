@@ -1,0 +1,54 @@
+
+[
+    {
+        "id": 1,
+        "name": "Momentous 2.0",
+        "short": "Post & Plan Social Gatherings",
+        "image": "https://user-images.githubusercontent.com/74746211/125920227-05ea9b17-075c-44ab-bf8e-78fa291923fa.PNG",
+        "tech": ["JavaScript", "MongoDB", "Express", "React","Bulma", "Heroku"],
+        "description": "Momentous is an online event forum where users are able to host and RSVP to events. The application aims to make it easier for people to plan in-person social activities and reconnect you with your loved ones in a post-pandemic world. Events hosted on Momentous are ‘community-driven’, meaning that it is a “no-pressure/no-cost” environment for users to interact in-person in a post-pandemic world.",
+        "app": "https://momentous2.herokuapp.com/",
+        "repo": "https://github.com/pdxbellasaurus/momentous-v2"
+      },
+      {
+        "id": 2,
+        "name": "Momentous",
+        "short": "A fun and simple event planner you can share with friends!",
+        "image": "https://user-images.githubusercontent.com/74746211/125920397-00ba9383-74f2-4776-bca7-827b4cd67131.PNG",
+        "tech": ["JavaScript", "MySQL2", "Express", "Handlebars","Bulma", "Heroku"],
+        "description": "This project is a simple event planning and sharing website using the MVC paradigm. The application utilizes the express-handlebars package to implement Handlebars.js for the Views, the MySQL2 and Sequelize packages to connect to a MySQL database for the Models, and create an Express.js API for the Controllers.",
+        "app": "https://momentous-events.herokuapp.com/",
+        "repo": "https://github.com/pdxbellasaurus/momentous"
+      },
+      {
+        "id": 3,
+        "name": "Book Search",
+        "short": "Search for and Save books to your favorite list.",
+        "image": "https://user-images.githubusercontent.com/74746211/124382234-313b7380-dc7b-11eb-9fe0-1e31c2b6cb18.PNG",
+        "tech": ["JavaScript", "MongoDB", "Express","React","Semantic UI", "Heroku"],
+        "description": "This simple, React-based Google Books API search application for users to search and display books. The application uses a MERN stack using Node, Express and MongoDB so that users can save books to a list to review or purchase later.",
+        "app": "https://stunning-yosemite-11209.herokuapp.com/",
+        "repo": "https://github.com/pdxbellasaurus/UofO21reactBookSearch"
+      },
+      {
+        "id": 4,
+        "name": "Memoirs of an Apparatus",
+        "short": "MVC Tech Blog",
+        "image": "https://user-images.githubusercontent.com/74746211/117802068-dac93000-b209-11eb-836c-fd7e36982d56.PNG",
+        "tech": ["JavaScript", "MySQL2", "Express", "Handlebars","Bulma", "Heroku"],
+        "description": "Memoirs of an Apparatus is a blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. The application’s folder structure follows the Model-View-Controller paradigm. The application utilizes the express-handlebars package to implement Handlebars.js for the Views, the MySQL2 and Sequelize packages to connect to a MySQL database for the Models, and create an Express.js API for the Controllers.",
+        "app": "https://young-crag-23305.herokuapp.com/",
+        "repo": "https://github.com/pdxbellasaurus/UofO14mvcTechBlog"
+      },
+      {
+        "id": 5,
+        "name": "Famous Birthday Bash",
+        "short": "A fun way for Users to freshen up their knowledge on their famous birthday twins and connect them with the cosmos.",
+        "image": "https://user-images.githubusercontent.com/74746211/125914589-2b782309-f8e2-410f-8b67-4c9f3e09a94f.png",
+        "tech": ["JavaScript","Bulma","HTML"],
+        "description": "Ever wanted to know which famous person from history that you share a birthday with? Ever wanted to know your horoscope for the day? With this one of a kind Web application, users will be able to know both - all by entering in their birthday! The site will then generate a famous person for you as well as your shared horoscope. Interested in knowing how your horoscope changes throughout the week? - Users will be able to look up previous searches via a sidebar that shows them clickable links to previously searched famous persons.",
+        "app": "https://pdxbellasaurus.github.io/superheroBirthdayBash/",
+        "repo": "https://github.com/pdxbellasaurus/superheroBirthdayBash"
+      }
+]
+
