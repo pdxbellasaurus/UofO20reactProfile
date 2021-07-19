@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/UofO20reactProfile/static/js/main.b2745076.chunk.js",
+    "main.js.map": "/UofO20reactProfile/static/js/main.b2745076.chunk.js.map",
+    "runtime-main.js": "/UofO20reactProfile/static/js/runtime-main.6d9360e4.js",
+    "runtime-main.js.map": "/UofO20reactProfile/static/js/runtime-main.6d9360e4.js.map",
+    "static/js/2.140aa144.chunk.js": "/UofO20reactProfile/static/js/2.140aa144.chunk.js",
+    "static/js/2.140aa144.chunk.js.map": "/UofO20reactProfile/static/js/2.140aa144.chunk.js.map",
+    "index.html": "/UofO20reactProfile/index.html",
+    "static/js/2.140aa144.chunk.js.LICENSE.txt": "/UofO20reactProfile/static/js/2.140aa144.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6d9360e4.js",
+    "static/js/2.140aa144.chunk.js",
+    "static/js/main.b2745076.chunk.js"
+  ]
+}
