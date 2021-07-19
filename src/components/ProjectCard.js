@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
 import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
@@ -13,11 +14,13 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import LaunchIcon from '@material-ui/icons/Launch';
 import BookOutlinedIcon from '@material-ui/icons/BookOutlined';
 import projects from "../projects.json";
+import { Container } from '@material-ui/core';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 345,
-    },
+      maxWidth: 365
+             },
     media: {
       height: 0,
       paddingTop: '56.25%', // 16:9
@@ -37,31 +40,30 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ProjectCard() {
   const classes = useStyles();
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(-1);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
+  const handleExpandClick = (i) => {
+    setExpanded(expanded === i ? -1 : i);
   };
 
   return (
-      <>
+    <Container >
+     
+      <Grid container direction="row" alignItems="flex-start" spacing={2}>
+  
     {projects.map((project, index) => (
-
-        <Card className={classes.root} key={index}>
+      <Grid item xs={5} >
+        <Card className={classes.root} key={index} bgcolor="primary.main" height='100%'>
         <CardHeader
           title={project.name}
-          subheader="September 14, 2016"
+          subheader={project.short}
         />
         <CardMedia
           className={classes.media}
           image={project.image}
           title="image description here"
         />
-        <CardContent>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {project.short}
-          </Typography>
-        </CardContent>
+       
         <CardActions disableSpacing>
           <IconButton aria-label="launch application" href={project.app}>
             <LaunchIcon />
@@ -73,28 +75,39 @@ export default function ProjectCard() {
             className={clsx(classes.expand, {
               [classes.expandOpen]: expanded,
             })}
-            onClick={handleExpandClick}
-            aria-expanded={expanded}
+            onClick={() => handleExpandClick (index)}
+            aria-expanded={expanded === index}
             aria-label="show more"
           >
             <ExpandMoreIcon />
           </IconButton>
         </CardActions>
-        <Collapse in={expanded} timeout="auto" unmountOnExit>
+        <Collapse in={expanded === index} timeout="auto" unmountOnExit >
           <CardContent>
-            <Typography paragraph>Application Description:</Typography>
-            <Typography paragraph>
+           <Typography variant="body2" component="p">
               {project.description}
             </Typography>
-            <Typography paragraph>
-            {project.tech}
-            </Typography>        
+            <hr/>
+            <Typography paragraph variant="body2" component="p">
+           <strong>Made with:</strong>   
+              <br/>
+            {
+              project.tech.map((item, i) => (
+                <img key={i} alt={item.name} src={item.badge}/>
+              ))
+            }   
+            {/* {project.tech} */}
+            </Typography> 
+
+               
           </CardContent>
         </Collapse>
       </Card>
+</Grid>
 
         ))}
-   </>
+        </Grid>
+   </Container>
   );
 }
 
